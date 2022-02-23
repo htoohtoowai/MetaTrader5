@@ -1,12 +1,11 @@
 <?php
 
 
-namespace Tarikhagustia\LaravelMt5\Entities;
-
+namespace Yehtoo\MetaTrader5\Entities;
 
 /**
  * Class Trade
- * @package Tarikhagustia\LaravelMt5\Entities
+ * @package Yehtoo\MetaTrader5\Entities
  */
 class Trade
 {
@@ -144,5 +143,4 @@ class Trade
         $this->ticket = $ticket;
         return $this;
     }
-
 }

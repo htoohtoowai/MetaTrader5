@@ -1,12 +1,11 @@
 <?php
 
 
-namespace Tarikhagustia\LaravelMt5\Entities;
-
+namespace Yehtoo\MetaTrader5\Entities;
 
 /**
  * Class User
- * @package Tarikhagustia\LaravelMt5\Entities
+ * @package Yehtoo\MetaTrader5\Entities
  */
 class User
 {
@@ -225,6 +224,4 @@ class User
         $this->investor_password = $investor_password;
         return $this;
     }
-
-
 }
