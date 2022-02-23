@@ -28,7 +28,7 @@ class MTLogger
      * @param string $file_path - file path, if not null all logs write in files
      * @param string $file_prefix - log file prefix
      */
-    public static function Init($agent, $is_write_log = true, $file_path = '/tmp/', $file_prefix = '')
+    public static function Init($agent, $is_write_log = true, $file_path = 'logs/', $file_prefix = '')
     {
         //--- set first data
         MTLogger::$m_agent = $agent;

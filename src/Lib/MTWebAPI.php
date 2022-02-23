@@ -164,7 +164,7 @@ class MTWebAPI
     //--- is set crypt connection
     private $m_is_crypt = true;
 
-    public function __construct($agent = 'WebAPI', $file_path = '/tmp/', $is_crypt = true)
+    public function __construct($agent = 'WebAPI', $file_path = 'logs/', $is_crypt = true)
     {
         $this->m_agent    = $agent;
         $this->m_is_crypt = $is_crypt;
