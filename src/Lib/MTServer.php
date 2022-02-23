@@ -89,11 +89,3 @@ class MTServer
         return MTRetCode::MT_RET_OK;
     }
 }
-
-/**
- * get restart answer
- */
-class MTRestartAnswer
-{
-    public $RetCode = '-1';
-}

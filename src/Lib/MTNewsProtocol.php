@@ -91,10 +91,3 @@ class MTNewsProtocol
         return MTRetCode::MT_RET_OK;
     }
 }
-/**
- * news answer
- */
-class MTNewsAnswer
-{
-    public $RetCode = '-1';
-}

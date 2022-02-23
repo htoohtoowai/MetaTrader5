@@ -104,12 +104,3 @@ class MTTradeProtocol
         return MTRetCode::MT_RET_OK;
     }
 }
-
-/**
- * get trade answer
- */
-class MTTradeAnswer
-{
-    public $RetCode = '-1';
-    public $Ticket = 0;
-}

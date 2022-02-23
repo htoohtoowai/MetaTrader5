@@ -87,10 +87,3 @@ class MTMailProtocol
         return MTRetCode::MT_RET_OK;
     }
 }
-/**
- * get mail answer
- */
-class MTMailAnswer
-{
-    public $RetCode = '-1';
-}
