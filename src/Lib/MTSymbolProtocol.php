@@ -49,7 +49,7 @@ class MTSymbolProtocol
         }
         //---
         $total = $group->Total;
-        return MTRetCode::MT_RET_OK;
+        return $total;
     }
 
     /**
@@ -126,7 +126,7 @@ class MTSymbolProtocol
         //--- get object from json
         $symbol_next = $symbol_answer->GetFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $symbol_next;
     }
 
     /**
@@ -204,7 +204,7 @@ class MTSymbolProtocol
         //--- get object from json
         $symbol = $symbol_answer->GetFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $symbol;
     }
 
     /**
@@ -244,7 +244,7 @@ class MTSymbolProtocol
         //--- get object from json
         $symbol = $symbol_answer->GetFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $symbol;
     }
 
     /**
@@ -282,7 +282,7 @@ class MTSymbolProtocol
         //--- get object from json
         $new_symbol = $symbol_answer->GetFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $new_symbol;
     }
 
     /**

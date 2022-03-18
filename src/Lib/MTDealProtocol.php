@@ -53,7 +53,7 @@ class MTDealProtocol
         //--- get object from json
         $deal = $deal_answer->GetFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $deal;
     }
     /**
      * check answer from MetaTrader 5 server
@@ -164,7 +164,7 @@ class MTDealProtocol
         //--- get total
         $total = $deal_answer->Total;
         //---
-        return MTRetCode::MT_RET_OK;
+        return $total;
     }
     /**
      * Get deals
@@ -204,7 +204,7 @@ class MTDealProtocol
         //--- get object from json
         $deals = $deal_answer->GetArrayFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $deals;
     }
     /**
      * Check answer from MetaTrader 5 server

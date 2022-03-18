@@ -38,7 +38,9 @@ class MTUserAccountAnswer
         $result->MarginLeverage    = (int)$obj->MarginLeverage;
         $result->Profit            = (float)$obj->Profit;
         $result->Storage           = (float)$obj->Storage;
-        $result->Commission        = (float)$obj->Commission;
+        if (isset($obj->Commission)) {
+            $result->Commission        = (float)$obj->Commission;
+        }
         $result->Floating          = (float)$obj->Floating;
         $result->Equity            = (float)$obj->Equity;
         $result->SOActivation      = (int)$obj->SOActivation;

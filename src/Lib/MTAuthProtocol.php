@@ -66,7 +66,7 @@ class MTAuthProtocol
         //--- get crypt rand from MT server
         $crypt_rand = $auth_answer->CryptRand;
         //---
-        return MTRetCode::MT_RET_OK;
+        return $crypt_rand;
     }
     /**
      * Send AUTH_ANSWER to MT server

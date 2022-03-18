@@ -55,7 +55,7 @@ class MTUserProtocol
         }
         //---
         $new_user = $user_answer->GetFromJson();
-        return MTRetCode::MT_RET_OK;
+        return $new_user;
     }
 
     /**
@@ -179,7 +179,7 @@ class MTUserProtocol
         //---
         $new_user = $user_answer->GetFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $new_user;
     }
 
     /**
@@ -217,7 +217,7 @@ class MTUserProtocol
         //---
         $user = $user_answer->GetFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $user;
     }
 
     /**
@@ -450,7 +450,7 @@ class MTUserProtocol
         //---
         $account = $user_account->GetFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $account;
     }
 
     /**
@@ -529,7 +529,7 @@ class MTUserProtocol
         //---
         $logins = $user_logins->GetFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $logins;
     }
 
     /**

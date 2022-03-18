@@ -56,7 +56,7 @@ class MTGroupProtocol
         //---
         $total = $group->Total;
         //---
-        return MTRetCode::MT_RET_OK;
+        return $total;
     }
 
     /**
@@ -133,7 +133,7 @@ class MTGroupProtocol
         //--- get object from json
         $group_next = $group_answer->GetFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $group_next;
     }
 
     /**
@@ -211,7 +211,7 @@ class MTGroupProtocol
         //--- get object from json
         $new_group = $group_answer->GetFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $new_group;
     }
 
     /**
@@ -518,7 +518,7 @@ class MTGroupProtocol
         //--- get object from json
         $group = $group_answer->GetFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $group;
     }
 
     /**

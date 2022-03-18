@@ -47,7 +47,7 @@ class MTCommonProtocol
         //---
         $common = $common_answer->GetFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $common;
     }
     /**
      * check answer from MetaTrader 5 server

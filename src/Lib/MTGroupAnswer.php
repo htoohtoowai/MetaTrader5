@@ -44,9 +44,15 @@ class MTGroupAnswer
         $result->CurrencyDigits       = (int)$obj->CurrencyDigits;
         $result->ReportsMode          = (int)$obj->ReportsMode;
         $result->ReportsFlags         = (int)$obj->ReportsFlags;
-        $result->ReportsSMTP          = (string)$obj->ReportsSMTP;
-        $result->ReportsSMTPLogin     = (string)$obj->ReportsSMTPLogin;
-        $result->ReportsSMTPPass      = (string)$obj->ReportsSMTPPass;
+        if (isset($obj->ReportsSMTP)) {
+            $result->ReportsSMTP          = (string)$obj->ReportsSMTP;
+        }
+        if (isset($obj->ReportsSMTPLogin)) {
+            $result->ReportsSMTPLogin     = (string)$obj->ReportsSMTPLogin;
+        }
+        if (isset($obj->ReportsSMTPPass)) {
+            $result->ReportsSMTPPass      = (string)$obj->ReportsSMTPPass;
+        }
         $result->NewsMode             = (int)$obj->NewsMode;
         $result->NewsCategory         = (string)$obj->NewsCategory;
         $result->NewsLangs            = (array)$obj->NewsLangs;

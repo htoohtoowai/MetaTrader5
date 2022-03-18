@@ -52,7 +52,7 @@ class MTOrderProtocol
         //--- get object from json
         $order = $order_answer->GetFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $order;
     }
     /**
      * check answer from MetaTrader 5 server
@@ -160,7 +160,7 @@ class MTOrderProtocol
         //--- get total
         $total = $order_answer->Total;
         //---
-        return MTRetCode::MT_RET_OK;
+        return $total;
     }
     /**
      * Get order
@@ -198,7 +198,7 @@ class MTOrderProtocol
         //--- get object from json
         $orders = $order_answer->GetArrayFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $orders;
     }
     /**
      * Check answer from MetaTrader 5 server

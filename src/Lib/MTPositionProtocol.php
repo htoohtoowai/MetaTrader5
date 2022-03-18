@@ -54,7 +54,7 @@ class MTPositionProtocol
         //--- get object from json
         $position = $position_answer->GetFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $position;
     }
     /**
      * check answer from MetaTrader 5 server
@@ -162,7 +162,7 @@ class MTPositionProtocol
         //--- get total
         $total = $position_answer->Total;
         //---
-        return MTRetCode::MT_RET_OK;
+        return $total;
     }
     /**
      * Get positions
@@ -200,7 +200,7 @@ class MTPositionProtocol
         //--- get object from json
         $positions = $position_answer->GetArrayFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $positions;
     }
     /**
      * Check answer from MetaTrader 5 server

@@ -53,7 +53,7 @@ class MTHistoryProtocol
         //--- get object from json
         $history = $history_answer->GetFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $history;
     }
     /**
      * check answer from MetaTrader 5 server
@@ -164,7 +164,7 @@ class MTHistoryProtocol
         //--- get total
         $total = $history_answer->Total;
         //---
-        return MTRetCode::MT_RET_OK;
+        return $total;
     }
     /**
      * Get historys
@@ -204,7 +204,7 @@ class MTHistoryProtocol
         //--- get object from json
         $histories = $history_answer->GetArrayFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $histories;
     }
     /**
      * Check answer from MetaTrader 5 server

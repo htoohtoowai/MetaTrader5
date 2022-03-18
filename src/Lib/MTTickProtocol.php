@@ -54,7 +54,7 @@ class MTTickProtocol
         //--- get object from json
         $ticks = $tick_answer->GetArrayFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $ticks;
     }
     /**
      * check answer from MetaTrader 5 server
@@ -132,7 +132,7 @@ class MTTickProtocol
         //--- get object from json
         $ticks = $tick_answer->GetArrayFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $ticks;
     }
     /**
      * Get stat ticks
@@ -169,7 +169,7 @@ class MTTickProtocol
         //--- get object from json
         $tick_stat = $tick_answer->GetArrayFromJson();
         //---
-        return MTRetCode::MT_RET_OK;
+        return $tick_stat;
     }
     /**
      * check answer from MetaTrader 5 server

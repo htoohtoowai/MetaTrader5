@@ -63,7 +63,7 @@ class MTTradeProtocol
         //---
         $ticket = $trade_answer->Ticket;
         //---
-        return MTRetCode::MT_RET_OK;
+        return $ticket;
     }
 
     /**
